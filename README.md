@@ -1,45 +1,39 @@
-# 🌤️ Weather App
+# 💱 Currency.to
 
-A modern, clean, and responsive weather application built with React and Vite, providing real-time weather data and forecasts across devices.
+A modern, fast, and responsive currency converter application built with React and Vite, providing real-time exchange rates and historical trend charts across devices.
 
 ---
 
 ## 🚀 Features
 
-* **Global Search:** Find current weather conditions for any city worldwide instantly.
-* **Detailed Metrics:** View real-time temperature, feels-like temperature and humidity.
-* **Geolocation Support:** Automatically fetch weather details for your current location.
-* **Multi-Day Forecast:** Detailed weather predictions to help you plan ahead.
-* **Responsive Layout:** Tailored design for mobile, tablet, and desktop screens.
+* **Instant Currency Conversion:** Real-time exchange rate calculations supporting global currencies.
+* **14-Day Historical Charts:** Interactive area charts powered by Recharts showing rate trends over the past two weeks.
+* **Seamless Dark Mode:** Automatic system detection and custom theme toggle with synchronized dynamic components.
+* **Bidirectional Currency Swap:** One-click instant swap between base and target currencies.
+* **Responsive Layout:** Tailored, accessible design for mobile, tablet, and desktop screens.
 
 ---
 
 ## 🛠️ Tech Stack
 
 * **Frontend Framework:** React (Vite)
-* **Styling:** Tailwind CSS
+* **Styling:** Tailwind CSS, React Select
+* **Data Visualization:** Recharts
 * **Language:** JavaScript (ES6+)
+* **APIs:** ExchangeRate-API, FrankFurter-API
 
 ---
 
 ## 📁 Project Structure
 
 ```text
-weather-app/
-├── design/
-│   ├── phone.jpg
-│   ├── web.jpg
-│   └── web_main.jpg
+currency-converter/
 ├── public/
-│   ├── icons/
-│   ├── favicon.svg
-│   ├── icons.svg
 │   └── logo.png
-├── scripts/
-│   └── download-img.js
 ├── src/
-│   ├── assets/
 │   ├── components/
+│   │   ├── HistoricalChart.jsx
+│   │   └── theme-toggle.jsx
 │   ├── App.jsx
 │   ├── index.css
 │   └── main.jsx
@@ -66,8 +60,8 @@ Ensure you have Node.js and npm installed:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/karkemo/weather-app.git
-   cd weather-app
+   git clone https://github.com/karkemo/currency-converter.git
+   cd currency-converter
    ```
 
 2. **Install dependencies:**
@@ -76,9 +70,9 @@ Ensure you have Node.js and npm installed:
    ```
 
 3. **Configure Environment Variables:**
-   Create a `.env` file in the root directory of the project and add your Weather API key:
+   Create a `.env` file in the root directory of the project and add your ExchangeRate API key:
    ```env
-   VITE_WEATHER_API_KEY=your_api_key_here
+   VITE_EXCHANGE_RATE_API_KEY=your_api_key_here
    ```
 
 4. **Start the development server:**
