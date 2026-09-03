@@ -7,5 +7,5 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
-  base: '/currency-converter-app/',
+  base: '/currency-converter/',
 })
