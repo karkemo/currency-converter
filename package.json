@@ -1,18 +1,19 @@
 {
-  "name": "weather-app",
+  "name": "currency converter",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://karkemo.github.io/weather-app",
+  "homepage": "https://karkemo.github.io/currency-converter-app",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.3",
-    "gh-pages": "^6.3.0",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
     "react-select": "^5.10.2",
@@ -28,6 +29,7 @@
     "eslint": "^10.8.0",
     "eslint-plugin-react-hooks": "^7.1.1",
     "eslint-plugin-react-refresh": "^0.5.3",
+    "gh-pages": "^6.3.0",
     "globals": "^17.7.0",
     "postcss": "^8.5.26",
     "tailwindcss": "^4.3.3",
