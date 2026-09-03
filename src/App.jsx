@@ -173,7 +173,7 @@ function App() {
       {/* navbar */}
       <nav className="w-full max-w-6xl py-5 px-6 flex flex-row items-center justify-between border-b border-black/10 dark:border-white/10">
         <div className="flex items-center gap-3">
-          <img src="/logo.png" alt="logo" className="h-10 w-auto" />
+          <img src="./logo.png" alt="logo" className="h-10 w-auto" />
           <p className="text-black dark:text-white font-extrabold text-2xl tracking-tight">Currency.to</p>
         </div>
         <ThemeToggle />
